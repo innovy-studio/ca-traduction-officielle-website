@@ -4,8 +4,8 @@ import { ServicesSection } from "@/components/services-section";
 import { WhyUsSection } from "@/components/why-us-section";
 import { TestimonialsSection } from "@/components/testimonials-section";
 import { AboutSection } from "@/components/about-section";
-import { CTASection } from "@/components/CTASection";
-import { ContactSection } from "@/components/ContactSection";
+import { CTASection } from "@/components/cta-section";
+import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
 
 export default function Home() {

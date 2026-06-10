@@ -11,8 +11,6 @@ export function AboutSection() {
       id="about"
       className="relative overflow-hidden bg-surface py-16 md:py-24"
     >
-      <div className="absolute right-0 top-0 h-80 w-80 rounded-full bg-secondary/5 blur-3xl" />
-
       <div className="relative max-w-container-max mx-auto px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           <div>
@@ -32,7 +30,7 @@ export function AboutSection() {
             </p>
 
             <div className="mt-10 grid sm:grid-cols-3 gap-4">
-              <div className="rounded-xl border border-outline-variant bg-surface-container p-5">
+              <div className="rounded-lg border border-outline-variant bg-surface-container p-5">
                 <MdOutlineVerified className="text-3xl text-secondary mb-3" />
                 <h3 className="font-semibold mb-1">Certifiée</h3>
                 <p className="text-sm text-on-surface-variant">
@@ -40,7 +38,7 @@ export function AboutSection() {
                 </p>
               </div>
 
-              <div className="rounded-xl border border-outline-variant bg-surface-container p-5">
+              <div className="rounded-lg border border-outline-variant bg-surface-container p-5">
                 <MdOutlineTranslate className="text-3xl text-secondary mb-3" />
                 <h3 className="font-semibold mb-1">Précise</h3>
                 <p className="text-sm text-on-surface-variant">
@@ -48,7 +46,7 @@ export function AboutSection() {
                 </p>
               </div>
 
-              <div className="rounded-xl border border-outline-variant bg-surface-container p-5">
+              <div className="rounded-lg border border-outline-variant bg-surface-container p-5">
                 <MdOutlineLock className="text-3xl text-secondary mb-3" />
                 <h3 className="font-semibold mb-1">Confidentielle</h3>
                 <p className="text-sm text-on-surface-variant">
@@ -59,17 +57,18 @@ export function AboutSection() {
           </div>
 
           <div className="space-y-5">
-            <div className="overflow-hidden rounded-2xl shadow-2xl border border-outline-variant">
+            <div className="overflow-hidden rounded-lg shadow-2xl border border-outline-variant">
               <iframe
+                title="Localisation du bureau CA Traduction Officielle à Koléa"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d504.1713296598658!2d2.7648783291441434!3d36.643520537414005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128f9f004ddc49c1%3A0x761a319479515fa4!2sTraduction%20Officielle%20Kolea%20Ma%C3%AEtre%20CHELHA%20Amina!5e0!3m2!1sfr!2sdz!4v1781101971556!5m2!1sfr!2sdz"
-                className="w-full h-75 md:h-112.5"
+                className="h-75 w-full md:h-112.5"
                 style={{ border: 0 }}
                 loading="lazy"
                 allowFullScreen
               />
             </div>
 
-            <div className="rounded-2xl border border-outline-variant bg-surface-container p-6">
+            <div className="rounded-lg border border-outline-variant bg-surface-container p-6">
               <div className="flex items-start gap-4">
                 <div className="rounded-lg bg-secondary/10 p-3">
                   <MdLocationOn className="text-2xl text-secondary" />

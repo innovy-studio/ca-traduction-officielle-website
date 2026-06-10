@@ -61,8 +61,7 @@ export function HeroSection() {
 
               <div>
                 <div className="text-2xl font-bold flex items-center gap-1 justify-center lg:justify-start">
-                  <MdOutlineStar className="text-yellow-500" />
-                  5★
+                  5<MdOutlineStar className="text-yellow-500" />
                 </div>
                 <div className="text-sm text-on-surface-variant">
                   Avis Google

@@ -92,7 +92,7 @@
 
   --text-display-hero: 44px;
   --text-display-hero--line-height: 1.2;
-  --text-display-hero--letter-spacing: -0.02em;
+  --text-display-hero--letter-spacing: 0;
   --text-display-hero--font-weight: 700;
 
   --text-display-hero-mobile: 32px;
@@ -103,4 +103,15 @@
   --text-label-caps--line-height: 1;
   --text-label-caps--letter-spacing: 0.05em;
   --text-label-caps--font-weight: 600;
+}
+
+@layer base {
+  body {
+    text-rendering: optimizeLegibility;
+  }
+
+  a,
+  button {
+    outline-offset: 4px;
+  }
 }

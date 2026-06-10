@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
-import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+import { MdChevronLeft, MdChevronRight, MdStar } from "react-icons/md";
 
 const testimonials = [
   {
@@ -34,40 +34,49 @@ export function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="py-section-gap bg-inverse-surface text-on-surface-variant"
+      className="py-section-gap bg-inverse-surface text-surface-container-low"
     >
-      <div className="px-gutter max-w-container-max mx-auto text-center">
-        <h2 className="text-headline-section font-headline-section text-surface-container-lowest mb-12">
-          Ce que disent nos clients
-        </h2>
-        <div className="relative overflow-hidden">
+      <div className="px-gutter max-w-container-max mx-auto">
+        <div className="mx-auto mb-10 max-w-2xl text-center">
+          <p className="mb-3 text-sm font-bold uppercase text-tertiary-fixed">
+            Avis clients
+          </p>
+          <h2 className="text-headline-section font-headline-section text-surface-container-lowest">
+            Ils nous confient leurs documents officiels.
+          </h2>
+        </div>
+
+        <div className="relative overflow-hidden rounded-lg border border-surface-container-low/20 bg-white/5 px-4 py-10 text-center sm:px-10">
           <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${current * 100}%)` }}
           >
             {testimonials.map((t, idx) => (
               <div key={idx} className="min-w-full px-4">
-                <div className="max-w-3xl mx-auto italic text-body-lg text-surface-container-low mb-8">
+                <div className="mb-6 flex justify-center gap-1 text-tertiary-fixed">
+                  {[...Array(5)].map((_, starIdx) => (
+                    <MdStar key={starIdx} aria-hidden="true" />
+                  ))}
+                </div>
+                <div className="max-w-3xl mx-auto text-body-lg text-surface-container-low mb-8">
                   &ldquo;{t.text}&rdquo;
                 </div>
-                <div className="text-tertiary-fixed font-bold">
-                  - {t.author}
-                </div>
+                <div className="text-tertiary-fixed font-bold">{t.author}</div>
               </div>
             ))}
           </div>
           <div className="flex justify-center gap-4 mt-8">
             <button
-              className="p-2 border border-outline-variant text-white rounded-full hover:bg-surface/10 transition-colors"
+              className="p-2 border border-surface-container-low/30 text-white rounded-full hover:bg-surface/10 transition-colors"
               onClick={() => moveSlider(-1)}
-              aria-label="Previous testimonial"
+              aria-label="Avis précédent"
             >
               <MdChevronLeft />
             </button>
             <button
-              className="p-2 border border-outline-variant text-white rounded-full hover:bg-surface/10 transition-colors"
+              className="p-2 border border-surface-container-low/30 text-white rounded-full hover:bg-surface/10 transition-colors"
               onClick={() => moveSlider(1)}
-              aria-label="Next testimonial"
+              aria-label="Avis suivant"
             >
               <MdChevronRight />
             </button>
