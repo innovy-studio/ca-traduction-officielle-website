@@ -78,8 +78,8 @@ export function AboutSection() {
                   <h3 className="font-semibold text-lg">Notre bureau</h3>
 
                   <p className="mt-2 text-on-surface-variant">
-                    Situé au cœur de Koléa, notre cabinet accueille les
-                    particuliers et les professionnels pour leurs besoins en
+                    Situé en face du tribunal de Koléa, notre cabinet accueille
+                    les particuliers et les professionnels pour leurs besoins en
                     traduction officielle.
                   </p>
                 </div>

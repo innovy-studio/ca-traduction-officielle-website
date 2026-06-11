@@ -31,7 +31,7 @@ const services = [
   {
     icon: <MdVerifiedUser className="text-primary text-3xl" />,
     title: "Dossiers administratifs",
-    desc: "Traductions officielles pour le ministère de l'Intérieur, et d'autres autorités gouvernementales.",
+    desc: "Traductions officielles pour toutes les institutions et autorités administratives.",
   },
   {
     icon: <MdEmergency className="text-primary text-3xl" />,
